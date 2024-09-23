@@ -1,0 +1,74 @@
+/*This is a CSS reset .  used to ensure that all HTML elements have consistent margins and padding across different browsers*/
+*{
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial;
+    background-color: hsl(30, 38%, 92%);
+    padding: 20px;
+    width:100%;
+}
+.container{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 20px;
+    padding:20px;
+}
+.image-1{
+    width:100%;
+    border-radius: 10px;
+}
+.inner-container{
+    padding: 20px 40px 40px 40px;
+    width:100%;
+}
+.inner-container h1{
+    padding: 20px 0px 20px 0px;
+   font-weight: 700;
+}
+p{
+    color: hsl(228, 12%, 48%);
+    font-style: 14px;
+}
+button{
+    background-color: hsl(158, 36%, 37%);
+    width:100%;
+    padding:20px;
+    border:none;
+    border-radius:8px;
+    color:#ffffff;
+}
+.price{
+    color: hsl(158, 57%, 29%);
+}
+.price span{
+    color:hsl(228, 12%, 48%);
+    font-size: 20px;
+}
+.fa-solid.fa-cart-shopping{
+   color:#ffffff;
+   margin-right:5px;
+}
+@media screen and (min-width :780px){
+    .container{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items:center;
+        width: 50%;
+        margin-top: 50px;
+    }
+    .upper-container{
+        display: flex;
+        align-items:center;
+        flex-direction:row;
+        justify-content: center;
+    }
+}
